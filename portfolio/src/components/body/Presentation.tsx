@@ -1,12 +1,12 @@
 function Presentation() {
   return (
     <>
-      <div className="flex h-96  pt-10  justify-center items-center">
+      <div className="flex h-96  pt-20  justify-center items-center">
         <img
           className="w-80 h-80 rounded-full hover:scale-110 transition duration-500 cursor-pointer"
           src="./src/assets/faccia.jpg"
         />
-        <div className=" pl-20 w-2/5">
+        <div className=" pl-20 w-2/5 pt-10">
           <h1 className="text-gray-700 font-extrabold text-4xl">
             Ciao Sono Alberto Un Pazzo Furioso
           </h1>
