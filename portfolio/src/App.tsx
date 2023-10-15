@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Presentation from "./components/body/Presentation";
 import Navbar from "./components/navbar/Navbar";
-import Menu from "./components/body/Menu";
+import Menu from "./components/navbar/Menu";
 
 export default function App() {
   const [menuShowed, setMenuShowed] = useState(false);
@@ -12,9 +12,9 @@ export default function App() {
   return (
     <html>
       <head></head>
-      <body>
+      <body className="bg-slate-100 ">
         <Navbar onMenuClicked={onMenuClicked} onMenu={menuShowed} />
-        {menuShowed ? <Presentation /> : <Menu />}
+        {!menuShowed ? <Presentation /> : <Menu />}
       </body>
     </html>
   );
